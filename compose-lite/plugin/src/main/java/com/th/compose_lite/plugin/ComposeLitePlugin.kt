@@ -5,5 +5,7 @@ import org.gradle.api.Project
 
 class ComposeLitePlugin : Plugin<Project> {
     override fun apply(target: Project) {
+        println("apply called")
+        // add kcp to project?
     }
 }
