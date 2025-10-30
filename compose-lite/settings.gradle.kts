@@ -23,3 +23,4 @@ dependencyResolutionManagement {
 rootProject.name = "compile-lite-plugin"
 
 include(":plugin")
+include(":kotlin-compiler-plugin")

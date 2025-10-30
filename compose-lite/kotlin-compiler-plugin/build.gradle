@@ -1,0 +1,27 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '2.0.21'
+    id 'java-gradle-plugin'
+}
+
+group = 'com.th.compose-lite'
+version = '0.0.1'
+
+gradlePlugin {
+    plugins {
+        create('com.th.compose-lite.kotlin-compiler-plugin') {
+            id = "com.th.compose-lite.kotlin-compiler-plugin"
+            implementationClass = "com.th.compose.com.th.compose_lite.kotlin_compiler_plugin.KotlinCompilerPlugin"
+        }
+    }
+}
+
+dependencies {
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+}
+
+test {
+    useJUnitPlatform()
+}
+kotlin {
+    jvmToolchain(11)
+}
