@@ -1,4 +1,7 @@
 pluginManagement {
+    includeBuild("./compose-lite") {
+        name = "compose-lite-plugin"
+    }
     repositories {
         google {
             content {
@@ -21,5 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "compose-lite"
 include(":app")
-include(":compose-lite:plugin")
 include(":compose-lite:sample")

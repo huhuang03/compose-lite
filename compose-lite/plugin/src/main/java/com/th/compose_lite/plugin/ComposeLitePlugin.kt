@@ -5,5 +5,7 @@ import org.gradle.api.Project
 
 class ComposeLitePlugin : Plugin<Project> {
     override fun apply(target: Project) {
+//        throw Exception("test")
+        println("apply called")
     }
 }
