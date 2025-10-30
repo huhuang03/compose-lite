@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "compose-lite"
 include(":app")
 include(":compose-lite:plugin")
+include(":compose-lite:sample")

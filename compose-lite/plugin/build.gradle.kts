@@ -17,6 +17,7 @@ kotlin {
 gradlePlugin {
     plugins {
         create("compose-lite-plugin") {
+            id = "com.th.compose_lite.plugin"
             implementationClass = "com.th.compose_lite.plugin.ComposeLitePlugin"
         }
     }
